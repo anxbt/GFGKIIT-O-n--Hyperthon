@@ -1,6 +1,8 @@
 import React from 'react';
 import { PlayerAppearance } from '../types/game';
 import { Paintbrush, Square, Circle, Triangle, Sparkles, Flame } from 'lucide-react';
+import icon from ',,/assets/icon.png';
+
 
 interface CharacterCustomizerProps {
   appearance: PlayerAppearance;

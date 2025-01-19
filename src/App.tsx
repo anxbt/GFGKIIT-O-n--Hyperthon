@@ -1,11 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
-import React, { useState, useCallback } from 'react';
+import  { useState, useCallback } from 'react';
 import { GameCanvas } from './components/GameCanvas';
-import { Battle } from './components/Battle';
-import { CharacterCustomizer } from './components/CharacterCustomizer';
+import { Battle } from './components/battle';
+import { CharacterCustomizer } from './components/CharacterCustomisation';
 import { GameState, Position, Creature, PlayerAppearance } from './types/game';
 import { creatures } from './data/creatures';
 import { Sword, Sparkles } from 'lucide-react';
@@ -90,7 +88,7 @@ function App() {
     };
   
     return (
-      <div className="min-h-screen bg-gradient-to-b from-blue-900 to-purple-900 flex flex-col items-center justify-center p-8">
+      <div className="min-h-screen  bg-gradient-to-b from-blue-900 to-purple-900 flex flex-col items-center justify-center p-2">
         <div className="text-center mb-8 animate-bounce">
           <h1 className="text-5xl font-bold text-white flex items-center justify-center gap-3">
             <Sword className="w-8 h-8 text-yellow-400" />
@@ -122,7 +120,7 @@ function App() {
             onAppearanceChange={handleAppearanceChange}
           />
         </div>
-  
+  {/* how to play */}
         <div className="mt-8 bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm text-white max-w-md">
           <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
             <span>🎮</span> How to Play
@@ -142,6 +140,8 @@ function App() {
             </li>
           </ul>
         </div>
+
+
     </div>
   )
 }
