@@ -18,4 +18,4 @@ Here are some screenshots of the game:
 
 ## Hosted Link
 
-You can play the game [here](https://your-hosted-link.com).
+You can play the game [here](https://gfgkiit-o-n-hyperthon-2vu8.vercel.app/).
